@@ -1,0 +1,14 @@
+div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #111;
+    inset: 5px;
+    border-radius: 45px;
+    z-index: 1;
+    transition: opacity .3s ease;
+}
+
+#toggle:checked ~ main div::after {
+    opacity: 0.5;
+}
