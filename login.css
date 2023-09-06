@@ -96,24 +96,22 @@ button {
     cursor: pointer;
 }
 /* Define o estilo do contêiner social */
-.social {
-    margin-top: 30px;
-    display: flex;
-}
-/* Define o estilo dos elementos sociais */
-.social div {
-    background: red; /* Cor de fundo temporária */
-    width: 150px;
-    border-radius: 3px;
-    padding: 5px 10px 10px 5px;
-    background-color: rgba(255, 255, 255, 0.27);
-    color: #eaf0fb;
+.social-icons {
+    padding-top: 50px;
     text-align: center;
-}
-/* Define o estilo dos elementos sociais quando o mouse está sobre eles */
-.social div:hover {
-    background-color: rgba(255, 255, 255, 0.27);
-}
+  }
+  
+  .social-icons a {
+    margin: 40px; /* Espaçamento entre os ícones */
+    font-size: 45px; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone */
+    text-decoration: none; /* Remover sublinhado do link */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Cor quando o mouse passa por cima do ícone */
+  }
+  
 
 .social .fb {
     margin-left: 25px;
