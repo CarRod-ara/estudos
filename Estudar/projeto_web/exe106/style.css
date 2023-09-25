@@ -32,3 +32,27 @@ section {
     padding: 20px;
     height: 500px;
 }
+
+.main-content {
+    flex-grow: 6;
+    text-align: center;
+    background-color: rgb(91, 39, 160);
+    color: white;
+    padding: 20px;
+}
+
+.right-sidebar {
+    flex-grow: 2;
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 0, 212);
+    color: white;
+    padding: 20px;
+}
