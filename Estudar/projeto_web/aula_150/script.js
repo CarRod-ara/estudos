@@ -13,5 +13,5 @@ console.table(nomes);*/
 /*nomes.sort().reverse();
 console.table(nomes);*/
 
-//aqui já virou p******, mas também da pra fazer dessa forma
+// mas também da pra fazer dessa forma
 console.table(nomes.sort().reverse());
