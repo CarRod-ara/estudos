@@ -24,3 +24,11 @@ let pessoa = {
     ]
 
 }
+
+
+//apresentar dados dos obejtos
+
+console.log(pessoa.nome)
+console.log(pessoa['genero'])
+console.log(pessoa.apresentar_idade())
+console.table(pessoa.hobbies)
