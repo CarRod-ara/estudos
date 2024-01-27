@@ -1,8 +1,8 @@
 //criando um objeto
 
-let pessoa = {
+/*let pessoa = {
 
-    // propriedades
+    // propriedade
     nome:"Joao",
     sobrenome: "Ribeiro",
     idade: 48,
@@ -25,10 +25,31 @@ let pessoa = {
 
 }
 
+*/
+//apresentar dados dos objetos
 
-//apresentar dados dos obejtos
+//console.log(pessoa.nome)
+//console.log(pessoa['genero'])
+//console.log(pessoa.apresentar_idade())
+//console.table(pessoa.hobbies)
 
-console.log(pessoa.nome)
-console.log(pessoa['genero'])
-console.log(pessoa.apresentar_idade())
-console.table(pessoa.hobbies)
+
+// mostrar todas as propriedades do objeto
+/* for(let propriedade in pessoa){
+    console.log(pessoa[propriedade])
+}*/
+
+//adicionar propriedades ao objeto
+
+/*pessoa.email = "joão.ribeiro@gmail.com"
+pessoa['mobile'] = "123456789"
+console.log(pessoa.email)
+console.log(pessoa.mobile)
+console.log(pessoa)*/
+
+// eliminar propriedades de objetos
+
+/*delete pessoa.idade
+console.log(pessoa.idade)
+console.log (pessoa)*/
+
