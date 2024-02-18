@@ -5,33 +5,33 @@ com gradação de cores vermelho, verde ou azul
 com variação do valor RGB em 10 pontos
 */
 
-document.querySelector("#btn_vermelho").addEventListener("click", () => {
-    for(let i=0; i <= 250; i+=10){
-        delete_elements()
-        let tmp = document.createElement('div')
-        tmp.classList.add('caixa')
-        tmp.style.backgroundColor = 'rgb(${i},0,0)'
-        document.body.appendChild(tmp)
-    }
-})
-
-document.querySelector("#btn_verde").addEventListener("click", () => {
+document.querySelector("#btn_vermelho").addEventListener('click', () => {
     delete_elements()
     for(let i=0; i <= 250; i+=10){
         let tmp = document.createElement('div')
         tmp.classList.add('caixa')
-        tmp.style.backgroundColor = 'rgb(0,${i},0)'
+        tmp.style.backgroundColor = `rgb(${i},0,0)`
+        document.body.appendChild(tmp)
+    }
+})
+
+document.querySelector("#btn_verde").addEventListener('click', () => {
+    delete_elements()
+    for(let i=0; i<=250; i+=10){
+        let tmp = document.createElement('div')
+        tmp.classList.add('caixa')
+        tmp.style.backgroundColor = `rgb(0,${i},0)`
         document.body.appendChild(tmp)
     }
     
 })
 
-document.querySelector("#btn_azul").addEventListener("click", () => {
+document.querySelector("#btn_azul").addEventListener('click', () => {
     delete_elements()
-    for(let i=0; i <= 250; i+=10){
+    for(let i=0; i<=250; i+=10){
         let tmp = document.createElement('div')
         tmp.classList.add('caixa')
-        tmp.style.backgroundColor = 'rgb(0,0,${i})'
+        tmp.style.backgroundColor = `rgb(0,0,${i})`
         document.body.appendChild(tmp)
     }
     
