@@ -2,7 +2,9 @@
 
 //usuario
 document.querySelector('input[name="usuario"]').addEventListener('keyup', () => {
-    console.log(document.querySelector('input[name="usuario"] + span'))
+    if(document.querySelector('input[name="usuario"] + span') !== null){
+        document.querySelector('input[name="usuario"] + span').remove
+    }
 })
 
 document.formulario_login.addEventListener('submit', (event) => {
@@ -13,7 +15,7 @@ document.formulario_login.addEventListener('submit', (event) => {
     let submit = true
 
     //remover erros anteriores
-    document.querySelector('.error').forEach( e => e.remove())
+    document.querySelectorAll('.error').forEach( e => e.remove())
 
     //validar usuario
     if(usuario === ""){
@@ -40,8 +42,8 @@ document.formulario_login.addEventListener('submit', (event) => {
 
         //faz com que os erros sumam após dois segundos
 
-        /*setTimeout(() => {
+        setTimeout(() => {
             document.querySelectorAll(".error").forEach(e => e.remove())
-        }, 2000)*/
+        }, 2000)
     }
 })
