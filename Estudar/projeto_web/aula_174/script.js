@@ -2,14 +2,14 @@
 
 //usuario
 document.querySelector('input[name="usuario"]').addEventListener('keyup', () => {
-    if(document.querySelector('input[name="usuario"] + span') !== null){
+    if (document.querySelector('input[name="usuario"] + span') !== null) {
         document.querySelector('input[name="usuario"] + span').remove()
     }
 })
 
 //senha
 document.querySelector('input[name="senha"]').addEventListener('keyup', () => {
-    if(document.querySelector('input[name="senha"] + span') !== null){
+    if (document.querySelector('input[name="senha"] + span') !== null) {
         document.querySelector('input[name="senha"] + span').remove()
     }
 })
@@ -23,29 +23,29 @@ document.formulario_login.addEventListener('submit', (event) => {
     let submit = true
 
     //remover erros anteriores
-    document.querySelectorAll('.error').forEach( e => e.remove())
+    document.querySelectorAll('.error').forEach(e => e.remove())
 
     //validar usuario
-    if(usuario === ""){
+    if (usuario === "") {
         submit = false
 
         //erro
         let tmp = document.querySelector('input[name="usuario"]')
-        tmp.insertAdjacentHTML('afterend','<span class="error">Usuário é obrigatório.')
+        tmp.insertAdjacentHTML('afterend', '<span class="error">Usuário é obrigatório.')
     }
 
     //validar senha
-    if(senha === ""){
+    if (senha === "") {
         submit = false
 
         //erro
         let tmp = document.querySelector('input[name="senha"]')
-        tmp.insertAdjacentHTML('afterend','<span class="error">Senha é obrigatória.')
+        tmp.insertAdjacentHTML('afterend', '<span class="error">Senha é obrigatória.')
 
     }
 
     //verificar se o formulário pode ser enviado
-    if(!submit){
+    if (!submit) {
         event.preventDefault()
 
         //faz com que os erros sumam após dois segundos
