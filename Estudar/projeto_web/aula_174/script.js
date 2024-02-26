@@ -3,9 +3,17 @@
 //usuario
 document.querySelector('input[name="usuario"]').addEventListener('keyup', () => {
     if(document.querySelector('input[name="usuario"] + span') !== null){
-        document.querySelector('input[name="usuario"] + span').remove
+        document.querySelector('input[name="usuario"] + span').remove()
     }
 })
+
+//senha
+document.querySelector('input[name="senha"]').addEventListener('keyup', () => {
+    if(document.querySelector('input[name="senha"] + span') !== null){
+        document.querySelector('input[name="senha"] + span').remove()
+    }
+})
+
 
 document.formulario_login.addEventListener('submit', (event) => {
 
@@ -42,8 +50,8 @@ document.formulario_login.addEventListener('submit', (event) => {
 
         //faz com que os erros sumam após dois segundos
 
-        setTimeout(() => {
+        /*setTimeout(() => {
             document.querySelectorAll(".error").forEach(e => e.remove())
-        }, 2000)
+        }, 2000)*/
     }
 })
