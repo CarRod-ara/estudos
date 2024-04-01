@@ -13,6 +13,15 @@
         echo 'PHP';
     ?>
 
-    <p><?= 'PHP'?></p>
+    <p>
+        <?= 'PHP'?>
+    </p>
+
+    <div>
+        <?php
+            print "Olá Mundo!";
+        ?>
+    </div>
+
 </body>
 </html>
