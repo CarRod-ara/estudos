@@ -2,5 +2,5 @@
 
     //APRESENTAR O VALOR DE UMA VARIÁVEL
 
-    $nome - "joão";
+    $nome = "joão";
     echo $nome;

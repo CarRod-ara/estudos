@@ -24,4 +24,8 @@
     $valor_01 = 1000;
 
     //case sensitive - 3 variáveis diferentes
+    $valor = 100;
+    $Valor = 200;
+    $VALOR = 300;
+    ?>
     

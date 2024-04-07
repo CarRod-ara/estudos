@@ -15,7 +15,7 @@ int main()
     cout << "'1'.(SOMA) '2'.(SUBTRAÇÃO) '3'. (MULTIPLICAÇÃO) '4'.(DIVISÃO)" << endl;
     cin >> opção;
     int i = 1;
-    while (i <= 2)
+    do
     {
         if (opção == 1)
         {
@@ -32,7 +32,7 @@ int main()
                 cout << "O Resultado da soma dá: " << Resultado << endl;
                 cout << "Desejaria repetir a soma? '1'.(sim) ou '2'.(não)" << endl;
                 cin >> RepetirOperação;
-            } while (RepetirOperação == 1 || RepetirOperação == '1');
+            } while (RepetirOperação <= 1);
         }
         else if (opção == 2)
         {
@@ -49,7 +49,7 @@ int main()
                 cout << "O Resultado da subtração dá: " << Resultado << endl;
                 cout << "Desejaria repetir a subtração? '1'.(sim) ou '2'.(não)" << endl;
                 cin >> RepetirOperação;
-            } while (RepetirOperação == 1 || RepetirOperação == '1');
+            } while (RepetirOperação <= 1);
         }
         else if (opção == 3)
         {
@@ -66,7 +66,7 @@ int main()
                 cout << "O Resultado da multiplicação dá: " << Resultado << endl;
                 cout << "Desejaria repetir a multiplicação? '1'.(sim) ou '2'.(não)" << endl;
                 cin >> RepetirOperação;
-            } while (RepetirOperação == 1 || RepetirOperação == '1');
+            } while (RepetirOperação <= 1);
         }
         else if (opção == 4)
         {
@@ -83,7 +83,7 @@ int main()
                 cout << "O Resultado da divizão dá: " << Resultado << endl;
                 cout << "Desejaria repetir a divizão? '1'.(sim) ou '2'.(não)" << endl;
                 cin >> RepetirOperação;
-            } while (RepetirOperação == 1 || RepetirOperação == '1');
+            } while (RepetirOperação <= 1);
         }
         else
         {
@@ -91,5 +91,5 @@ int main()
             cin >> opção;
             return i++;
         }
-    }
+    }while (i <= 2);
 }
