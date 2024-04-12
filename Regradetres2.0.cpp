@@ -56,6 +56,8 @@ int main() {
     cin >> opcaoRepetir;
   } while (opcaoRepetir == 's' || opcaoRepetir == 'S');
 
+
+
   // Mensagem de despedida
   cout << "Obrigado por usar a calculadora de regra de três!" << endl;
 
