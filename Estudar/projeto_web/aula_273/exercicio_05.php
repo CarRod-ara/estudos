@@ -10,10 +10,11 @@
     $lojas = [
         'lisboa' => 'lisboa@gmail.com',
         'porto' => 'porto@gmail.com',
-        'coimbra' => 'coimbra@gmail.com'
+        'coimbra' => 'coimbra@gmail.com',
+        'brasilia' => null
     ];
 
-    $cidade = 'lisboa';
+    $cidade = 'brasilia';
 ?>
 
 <!DOCTYPE html>
@@ -25,12 +26,13 @@
     <title>Exercício 5</title>
 </head>
 <body>
+        <?php if(key_exists($cidade, $lojas)): ?>
+            <h3><?= $cidade ?></h3>
+            <p><?= $lojas[$cidade]?></p>
+        <?php else: ?>
+            <p>Não existe nenhuma loja na cidade indicada.</p>
+        <?php endif ?>
 
-        <h3><!-- nome da cidade (se existe) --></h3>
-        <p><!-- email da loja da cidade (se existe) --></p>
-
-        <!-- quando não existe cidade na coleção das $lojas -->
-        <p>Não existe nenhuma loja na cidade indicada.</p>
 
 </body>
 </html>
