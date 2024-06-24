@@ -14,7 +14,7 @@
         'brasilia' => null
     ];
 
-    $cidade = 'brasilia';
+    $cidade = 'coimbra';
 ?>
 
 <!DOCTYPE html>
