@@ -81,7 +81,7 @@ int main()
                 cout << endl;
                 Resultado = PrimeiroNumero / SegundoNumero;
                 cout << "O Resultado da divizão dá: " << Resultado << endl;
-                cout << "Desejaria repetir a divizão? '1'.(sim) ou '2'.(não)" << endl;
+                cout << "Desejaria repetir a divisão? '1'.(sim) ou '2'.(não)" << endl;
                 cin >> RepetirOperação;
             } while (RepetirOperação <= 1);
         }
